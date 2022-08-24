@@ -1,4 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBalanceScaleLeft, faBalanceScale, faBalanceScaleRight } from '@fortawesome/free-solid-svg-icons'
 
 export function QFront({ activeState, question }){
     const [active, setActive] = activeState;
@@ -6,6 +8,7 @@ export function QFront({ activeState, question }){
 
     const [current, setCurrent] = useState(activeQuestion.question);
     const [keyTracker, setKeyTracker] = useState('');
+    const [scale, setScale] = useState(faBalanceScale)
     const [skip, setSkip] = useState(false);
 
     const resetReturn = (e) => {
@@ -19,9 +22,13 @@ export function QFront({ activeState, question }){
     const getNextQ = useCallback((key) => {
         if (activeQuestion[key]){ //so if not falsy
             setCurrent(activeQuestion[key]);
+            if (activeQuestion[key][0] === "Y") setScale(faBalanceScaleLeft);
+            if (activeQuestion[key][0] === "N") setScale(faBalanceScaleRight);
         } 
         else if (key.length !== 0 && !activeQuestion[key]) { 
             //not working properly rn with max key.length, but prevents skip from kicking in too soon
+            // update skip trigger to a hidden key or condition on the string value returned (if it begins with Y(es) or N(o)) so that it closes out upon receiving a conclusive decision.
+            
             setSkip(true);
         }
     }, [activeQuestion]);
@@ -42,13 +49,14 @@ export function QFront({ activeState, question }){
             <div className="hero min-h-screen bg-base-200">
                 <div className="text-center">
                         <h3 className="text-2xl font-bold">{current}</h3>
-                        {/* need to show the following conditionally/disable */}
-                
-                    {/* <div className="max-w-md"> */}
+                        <FontAwesomeIcon 
+                            icon={scale} 
+                            className="w-8 m-8 text-5xl" 
+                        />
 
                     { ! skip ? (
                         <>
-                            <fieldset className="my-20">
+                            <fieldset className="my-5">
                                 <button
                                     type="button"
                                     className="btn btn-primary btn-lg m-2"
@@ -68,7 +76,7 @@ export function QFront({ activeState, question }){
                             </fieldset>
                             <button
                                 type="button"
-                                class="btn btn-accent btn-outline"
+                                className="btn btn-accent btn-outline"
                                 onClick={e=>resetReturn(e)}
                             >
                                 Go to another question
@@ -80,7 +88,7 @@ export function QFront({ activeState, question }){
                     <p className="text-2xl m-8">You have your answer!</p>
                     <button
                         type="button"
-                        class="btn btn-accent btn-outline"
+                        className="btn btn-accent btn-outline"
                         onClick={e=>resetReturn(e)}
                     >
                         Go to another question

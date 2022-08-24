@@ -1,14 +1,13 @@
 import { Outlet, NavLink } from 'react-router-dom';
+
 import './Layout.css';
 
 export default function Layout(){
+	
 
     return (
-        <div className="Layout " data-theme="night">
-			<header>
-				<p>TREE LOGO HERE</p>
-			</header>
-			<main className="Layout-main min-h-screen">
+        <div className="min-h-screen" data-theme="night">
+			<main className="Layout-main">
 				<Outlet />
 			</main>
 			<nav className="Nav sticky bottom-5">
