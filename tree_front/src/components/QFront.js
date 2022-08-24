@@ -38,48 +38,63 @@ export function QFront({ activeState, question }){
     },[keyTracker])
 
     return (
-        <div
-            className="App"
-        >
-            <h3>{current}</h3>
+        <div className="App">
+            <div className="hero min-h-screen bg-base-200">
+                <div className="text-center">
+                        <h3 className="text-2xl font-bold">{current}</h3>
+                        {/* need to show the following conditionally/disable */}
+                
+                    {/* <div className="max-w-md"> */}
 
-            {/* need to show the following conditionally/disable */}
-            { ! skip ? (
-                <fieldset>
-                <legend
-                    className="choice"
-                    htmlFor="choices"
-                >
-                    Choose one
-                </legend>
+                    { ! skip ? (
+                        <>
+                            <fieldset className="my-20">
+                                <button
+                                    type="button"
+                                    className="btn btn-primary btn-lg m-2"
+                                    id="Y"
+                                    onClick={e=>updateCurrent(e)}
+                                >
+                                    Yes
+                                </button>
+                                <button
+                                    type="button"
+                                    className="btn btn-primary btn-lg m-2"
+                                    id="N"
+                                    onClick={e=>updateCurrent(e)}
+                                >
+                                    No
+                                </button>
+                            </fieldset>
+                            <button
+                                type="button"
+                                class="btn btn-accent btn-outline"
+                                onClick={e=>resetReturn(e)}
+                            >
+                                Go to another question
+                            </button>
+                        </>
+                    
+                ) : (
+                    <>
+                    <p className="text-2xl m-8">You have your answer!</p>
                     <button
                         type="button"
-                        className="primary"
-                        id="Y"
-                        onClick={e=>updateCurrent(e)}
+                        class="btn btn-accent btn-outline"
+                        onClick={e=>resetReturn(e)}
                     >
-                        Yes
+                        Go to another question
                     </button>
-                    <button
-                        type="button"
-                        className="primary"
-                        id="N"
-                        onClick={e=>updateCurrent(e)}
-                    >
-                        No
-                    </button>
-                </fieldset>
-            ) : (
-                <p>You have your answer!</p>
-            )}
-            
-            
-            <button
-                type="button"
-                onClick={e=>resetReturn(e)}
-            >
-                Go to another question
-            </button>
+                    </>
+                    
+                )}
+                    {/* </div> */}
+                    
+                </div>
+            </div>
+            <div className="flex items-center">
+                
+            </div>
         </div>
     )
 }

@@ -17,19 +17,32 @@ export default function Home({qList}){
         <div>
             {!active ? (
                 <>
-                    <p>Find your question here.</p>
-                    <ul>
-                        { qList.map(q => (
-                            <li
-                                key={q.id}
-                                id={q.id}
-                                className="clickable"
-                                onClick={e => activateQuestion(e)}
-                            >
-                                {q.question}
-                            </li>
-                        )) }
-                    </ul>
+                    <header className="hero min-h-screen bg-base-200">
+                        <div className="hero-content text-center">
+                            <div class="max-w-md">
+                                <h1 className="text-5xl font-bold">Welcome to the tree.</h1>
+                                <p className="py-6">Find your question and get a suggested action to take within three to four steps.</p>
+                                <p className="text-xl my-8">Filter to come!</p>
+                                <ul className="btn-group btn-group-vertical">
+                                    { qList.map(q => (
+                                        <li
+                                            key={q.id}
+                                            className="clickable"
+                                        >
+                                            <button
+                                                id={q.id}
+                                                className="btn my-2"
+                                                onClick={e => activateQuestion(e)}
+                                            >
+                                                {q.question}
+                                            </button>
+                                        </li>
+                                    )) }
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                    
                 </>
             ) : (
                 <>

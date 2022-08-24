@@ -5,7 +5,6 @@ import Home from './views/Home';
 import Suggest from './views/Suggest';
 import { sampleData } from './utils/sampleData';
 
-import './App.css';
 
 function App() {
 
