@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import About from './views/About';
+import Layout from './views/Layout';
+import Home from './views/Home';
+import Suggest from './views/Suggest';
+import { sampleData } from './utils/sampleData';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+  	return (
+		<Routes>
+			<Route path="/" element={<Layout />}>
+				<Route
+					index
+					element={<Home qList={sampleData} />}
+				/>
+				<Route
+					path="/about"
+					element={<About />}
+				/>
+				<Route
+					path="/suggest"
+					element={<Suggest />}
+				/>
+			</Route>
+		</Routes>
   );
 }
 
