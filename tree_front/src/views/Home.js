@@ -12,8 +12,7 @@ export default function Home({qList}){
         async function getData(url) {
             const response = await fetch(url) //local host but server is 3001 not 3000
             const results = await response.json()
-            // why must I map the results here to convert somehow, but cannot map later after setting it to data?
-            setData(results.map(thing => thing)) 
+            setData(results) 
         }
        getData(actualURL);
     }, [actualURL])
@@ -34,7 +33,7 @@ export default function Home({qList}){
                             <div className="max-w-md">
                                 <h1 className="text-5xl font-bold">Questions, answered.</h1>
                                 <p className="py-6">Find your question and get a suggested action to take within three to four steps.</p>
-                                <p className="my-2 uppercase text-sm">Welcome to the trees:</p>
+                                <p className="my-2 uppercase text-sm">Pick a tree:</p>
                                 <ul className="btn-group btn-group-vertical">
                                     { data.map(q => (
                                         <li
