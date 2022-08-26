@@ -6,7 +6,8 @@ export function QFront({ activeState, question }){
     const [active, setActive] = activeState;
     const [activeQuestion, setActiveQuestion] = question;
 
-    const [current, setCurrent] = useState(activeQuestion.question);
+    const [mainQ, setMainQ] = useState(activeQuestion.question);
+    const [current, setCurrent] = useState(activeQuestion.starter);
     const [keyTracker, setKeyTracker] = useState('');
     const [scale, setScale] = useState(faBalanceScale)
     const [skip, setSkip] = useState(false);
@@ -22,15 +23,22 @@ export function QFront({ activeState, question }){
     const getNextQ = useCallback((key) => {
         if (activeQuestion[key]){ //so if not falsy
             setCurrent(activeQuestion[key]);
-            if (activeQuestion[key][0] === "Y") setScale(faBalanceScaleLeft);
-            if (activeQuestion[key][0] === "N") setScale(faBalanceScaleRight);
+            if (activeQuestion[key][0] === "Y") {
+                setScale(faBalanceScaleLeft);
+                setSkip(true);
+            }
+            if (activeQuestion[key][0] === "N") {
+                setScale(faBalanceScaleRight);
+                setSkip(true);
+            }
         } 
-        else if (key.length !== 0 && !activeQuestion[key]) { 
-            //not working properly rn with max key.length, but prevents skip from kicking in too soon
-            // update skip trigger to a hidden key or condition on the string value returned (if it begins with Y(es) or N(o)) so that it closes out upon receiving a conclusive decision.
+        // else if (activeQuestion[key]) { 
+        //     //not working properly rn with max key.length, but prevents skip from kicking in too soon
+        //     // update skip trigger to a hidden key or condition on the string value returned (if it begins with Y(es) or N(o)) so that it closes out upon receiving a conclusive decision.
+        //     // if (activeQuestion[key][0] === "Y" || activeQuestion[key][0] === "N") 
             
-            setSkip(true);
-        }
+        //     setSkip(true);
+        // }
     }, [activeQuestion]);
 
     const updateCurrent = (e) => {
@@ -48,7 +56,8 @@ export function QFront({ activeState, question }){
         <div className="App">
             <div className="hero min-h-screen bg-base-200">
                 <div className="text-center">
-                        <h3 className="text-2xl font-bold">{current}</h3>
+                        <h2 className="text-2xl font-bold my-4">{mainQ}</h2>
+                        <h3 className="text-5xl font-bold">{current}</h3>
                         <FontAwesomeIcon 
                             icon={scale} 
                             className="w-8 m-8 text-5xl" 

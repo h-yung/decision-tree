@@ -1,6 +1,7 @@
 
 export const sampleData = [
     { question: 'sample question text?',
+        starter: 'starter question',
         Y: 's Y2 followup',
         YY: 's YY3 followup',
         YN: 's YN3 followup',
