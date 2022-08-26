@@ -1,17 +1,18 @@
 import { Outlet, NavLink } from 'react-router-dom';
 
 import './Layout.css';
+import '../tufte.css';
 
 export default function Layout(){
 	
 
     return (
-        <div className="min-h-screen" data-theme="night">
-			<main className="Layout-main">
+        <div className="max-h-screen">
+			<main className="Layout-main max-h-fit">
 				<Outlet />
 			</main>
-			<nav className="Nav sticky bottom-5">
-				<ul className="menu menu-horizontal bg-base-100 rounded-box">
+			<nav className="Nav fixed bottom-0">
+				<ul className="btm-nav btm-nav-sm bg-base-100">
 					<li className="hover-bordered">
 						<NavLink to="/" className="Nav-link">
 							Home

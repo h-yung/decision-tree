@@ -32,13 +32,6 @@ export function QFront({ activeState, question }){
                 setSkip(true);
             }
         } 
-        // else if (activeQuestion[key]) { 
-        //     //not working properly rn with max key.length, but prevents skip from kicking in too soon
-        //     // update skip trigger to a hidden key or condition on the string value returned (if it begins with Y(es) or N(o)) so that it closes out upon receiving a conclusive decision.
-        //     // if (activeQuestion[key][0] === "Y" || activeQuestion[key][0] === "N") 
-            
-        //     setSkip(true);
-        // }
     }, [activeQuestion]);
 
     const updateCurrent = (e) => {
@@ -55,14 +48,13 @@ export function QFront({ activeState, question }){
     return (
         <div className="App">
             <div className="hero min-h-screen bg-base-200">
-                <div className="text-center">
+                <div className="text-center px-8">
                         <h2 className="text-2xl font-bold my-4">{mainQ}</h2>
                         <h3 className="text-5xl font-bold">{current}</h3>
                         <FontAwesomeIcon 
                             icon={scale} 
                             className="w-8 m-8 text-5xl" 
                         />
-
                     { ! skip ? (
                         <>
                             <fieldset className="my-5">
