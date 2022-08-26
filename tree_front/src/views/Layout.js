@@ -7,7 +7,7 @@ export default function Layout(){
 	
 
     return (
-        <div className="max-h-screen">
+        <div className="max-h-screen max-w-screen-md">
 			<main className="Layout-main max-h-fit">
 				<Outlet />
 			</main>
