@@ -11,6 +11,7 @@ Small React and Mongo app using Tufte CSS.
 3. Set up simple API and back end with document schema.
 4. Added fetch API to front end.
 5. Tried different approaches to styling and ended up landing on Tufte CSS.
+6. Added a "plant a tree" option; requests accepted with passcode.
 
 ## upcoming main issues
 - [ ] Config front end with daisyui.
@@ -22,3 +23,4 @@ Small React and Mongo app using Tufte CSS.
 - [ ] Build the "not sure" loop.
 - [ ] Add flourishes. (e.g., steps, preview/anim)
 - [ ] Integrate into full stack app.
+- [ ] Deploy! Probs on Netlify.
