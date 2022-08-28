@@ -35,7 +35,7 @@ export default function Plant(){
     }
 
     return (
-        <>
+        <div className="Plant carousel-item w-full" id="plant">
             <h1>Plant a tree!</h1>
             <p className="subtitle">Add to the orchard</p>
             <p>If you don't have 30 minutes or you're wondering whether this is the best time to start a tree, please <Link to='/'>browse the existing trees</Link> instead for some decision-making help.</p>
@@ -110,6 +110,6 @@ export default function Plant(){
                         Submit
                     </button>
             </form>
-        </>
+        </div>
     )
 }

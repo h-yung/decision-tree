@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import './About.css';
 
 export default function About(){
     return (
-        <div className="App">
+        <div className="About carousel-item w-full" id="about">
             <h1>Project Background</h1>
             <section>
                 <h2>So what's all this for?</h2>
