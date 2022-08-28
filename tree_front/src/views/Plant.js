@@ -17,7 +17,6 @@ export default function Plant(){
 
     const postNewTree = async (e) => {
         e.preventDefault();
-        console.log('you clicked me')
         const options = {
             method:'POST',
             headers: {
@@ -25,7 +24,6 @@ export default function Plant(){
             },
             body: JSON.stringify({passcode, ...inputs}) 
         };
-        console.log(options.body)
         try {
             const response = await fetch(`${actualURL}/create-tree`, options)
             const results = await response.json()
