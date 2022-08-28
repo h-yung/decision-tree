@@ -9,18 +9,12 @@ Small React and Mongo app using Tufte CSS.
 ## progress
 1. Config environment with Prettier and set up directory structure. 
 2. Set up general document draft, to guide schema on server.
-3. Set up simple API and back end with document schema.
+3. Set up simple API and back end with document schema. Tested with Postman.
 4. Added fetch API to front end.
-5. Tried different approaches to styling and ended up landing on Tufte CSS.
-6. Added a "plant a tree" option; requests accepted with passcode.
+5. Tried different approaches to styling and ended up landing on Tufte CSS. Left Tailwind and daisyui detritus everywhere.
+6. Added a "plant a tree" option; requests accepted with passcode. 
 
 ## upcoming main issues
-- [ ] Config front end with daisyui.
-- [ ] Set up server side and test API with Postman.
-- [ ] Create form for posts.
-- [ ] Write API for front end.
-- [ ] Style with daisui.
-- [ ] Ignore daisyui and do some styling.
 - [ ] Build the "not sure" loop.
 - [ ] Add flourishes. (e.g., steps, preview/anim)
 - [ ] Integrate into full stack app.
