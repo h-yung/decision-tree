@@ -11,7 +11,9 @@
 </head>
 <body>
     <h1>Populate the orchard!</h1>
-    <form action="/create-tree" method='POST'>  
+    <form action="/create-tree" method='POST'> 
+        <label for="passcode">Type nothing here</label>
+        <input type="text" value="" id="passcode" placeholder="Authorized use only" name="passcode">
         <input type="text" placeholder="overall question" name='question'>
         <input type="text" placeholder="starter" name="starter">
         <input type="text" placeholder="Y" name='Y'>
