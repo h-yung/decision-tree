@@ -8,14 +8,19 @@ export default function Layout(){
 
     return (
         <div className="max-h-screen max-w-screen-md">
-			<main className="Layout-main max-h-fit">
+			<main className="Layout-main max-h-fit pb-10">
 				<Outlet />
 			</main>
-			<nav className="Nav fixed bottom-0">
-				<ul className="btm-nav btm-nav-sm bg-base-100">
+			<nav className="Nav sticky bottom-0">
+				<ul className="navlist btm-nav btm-nav-sm">
 					<li className="hover-bordered">
 						<NavLink to="/" className="Nav-link">
 							Home
+						</NavLink>
+					</li>
+					<li className="hover-bordered">
+						<NavLink to="/plant" className="Nav-link">
+							Plant
 						</NavLink>
 					</li>
 					<li className="hover-bordered">
@@ -23,11 +28,11 @@ export default function Layout(){
 							About
 						</NavLink>
 					</li>
-					<li className="hover-bordered">
+					{/* <li className="hover-bordered">
 						<NavLink to="/suggest" className="Nav-link">
 							Suggest
 						</NavLink>
-					</li>
+					</li> */}
 				</ul>
 			</nav>
 		</div>

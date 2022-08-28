@@ -1,6 +1,6 @@
 
 export const sampleData = [
-    { question: 'sample question text?',
+    { question: 'Another sample question text?',
         starter: 'starter question',
         Y: 's Y2 followup',
         YY: 's YY3 followup',
@@ -33,7 +33,7 @@ export const sampleData = [
         NNYN: 'NNYN5 response if not sooner',
         NNNY: 'NNNY5 response if not sooner',
         NNNN: 'NNNN5 response if not sooner',
-        id: 'one'
+        // id: 'one'
     },
     { question: 'sample question text 2?',
         Y: 'Y2 followup',

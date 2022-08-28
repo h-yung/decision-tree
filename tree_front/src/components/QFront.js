@@ -97,7 +97,6 @@ export function QFront({ activeState, question }){
                     </>
                     
                 )}
-                    {/* </div> */}
                     
                 </div>
             </div>

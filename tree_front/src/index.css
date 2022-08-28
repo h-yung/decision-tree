@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+:root {
+	--color-dark: #151515;
+	--color-light: #fffff8;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-bkg: var(--color-dark);
+		--color-top: var(--color-light);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-bkg: var(--color-light);
+		--color-top: var(--color-dark);
+	}
 }
 
 code {
@@ -23,10 +33,28 @@ body,
 	min-height: 100vh;
 }
 
+.btn__primary {
+	margin: 1.5rem auto;
+	font-size: 1.6rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--color-top);
+	padding: 0.5rem 1rem;
+	color: var(--color-bkg);
+	background: var(--color-top);
+}
+.btn__primary:hover {
+	opacity: 0.7;
+}
+
 .list-content {
 	padding: 2rem;
 	background: url('../public/pexels-photo-13210997.jpeg');
 	background-size: cover;
+}
+
+.navlist {
+	border-top: 1px solid var(--color-top);
+	background: var(--color-bkg);
 }
 
 /* 
