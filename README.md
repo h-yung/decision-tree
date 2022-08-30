@@ -18,6 +18,6 @@ Currently two halves of a full stack app. May rebuild in Next.js and deploy to V
 - [ ] Build the "not sure" loop.
 - [ ] Add flourishes. (e.g., steps, preview/anim)
 - [ ] Integrate into full stack app.
--~~ [ ] Deploy! Probs on Netlify.~~
+~~ [ ] Deploy! Probs on Netlify.~~
 
 
