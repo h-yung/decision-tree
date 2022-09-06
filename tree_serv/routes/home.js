@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const questController = require('../controllers/quest')
 
-router.get('/', questController.getForm) //should return ejs
+router.get('/', questController.getIndex) 
 
 router.get('/trees', questController.getTree) //should return json
 

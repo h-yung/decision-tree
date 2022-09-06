@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2036b0a.css",
+    "main.js": "/static/js/main.a788762f.js",
+    "static/js/787.d5f2d94e.chunk.js": "/static/js/787.d5f2d94e.chunk.js",
+    "static/media/pexels-photo-13210997.jpeg": "/static/media/pexels-photo-13210997.854977c155614bc469e2.jpeg",
+    "static/media/et-book-bold-line-figures.svg": "/static/media/et-book-bold-line-figures.2847a0c390b437d3ac61.svg",
+    "static/media/et-book-roman-line-figures.svg": "/static/media/et-book-roman-line-figures.6c6651c69821048ab55a.svg",
+    "static/media/et-book-roman-old-style-figures.svg": "/static/media/et-book-roman-old-style-figures.1c4df74ccd412986797d.svg",
+    "static/media/et-book-display-italic-old-style-figures.svg": "/static/media/et-book-display-italic-old-style-figures.7052181469d65ef08b7f.svg",
+    "static/media/et-book-display-italic-old-style-figures.ttf": "/static/media/et-book-display-italic-old-style-figures.8823eac088ad9be73a86.ttf",
+    "static/media/et-book-roman-line-figures.ttf": "/static/media/et-book-roman-line-figures.6b94337c017b950617c9.ttf",
+    "static/media/et-book-roman-old-style-figures.ttf": "/static/media/et-book-roman-old-style-figures.bc7b7dcf802cd95e4169.ttf",
+    "static/media/et-book-bold-line-figures.ttf": "/static/media/et-book-bold-line-figures.f61e31f5501bc2c2d0e9.ttf",
+    "static/media/et-book-bold-line-figures.woff": "/static/media/et-book-bold-line-figures.6cbac1488b6c9a647065.woff",
+    "static/media/et-book-roman-line-figures.woff": "/static/media/et-book-roman-line-figures.4ac21e22fa566a3a9d03.woff",
+    "static/media/et-book-roman-old-style-figures.woff": "/static/media/et-book-roman-old-style-figures.e1efe4c3b39280c51c75.woff",
+    "static/media/et-book-display-italic-old-style-figures.woff": "/static/media/et-book-display-italic-old-style-figures.265915ee0e932b50d567.woff",
+    "static/media/et-book-bold-line-figures.eot": "/static/media/et-book-bold-line-figures.5b5549528db5c06a8acb.eot",
+    "static/media/et-book-roman-line-figures.eot": "/static/media/et-book-roman-line-figures.0e28ac62c0a5f0a6ebd4.eot",
+    "static/media/et-book-roman-old-style-figures.eot": "/static/media/et-book-roman-old-style-figures.44171ebd10a032726f36.eot",
+    "static/media/et-book-display-italic-old-style-figures.eot": "/static/media/et-book-display-italic-old-style-figures.4abce91518b8e452e9f8.eot",
+    "index.html": "/index.html",
+    "main.d2036b0a.css.map": "/static/css/main.d2036b0a.css.map",
+    "main.a788762f.js.map": "/static/js/main.a788762f.js.map",
+    "787.d5f2d94e.chunk.js.map": "/static/js/787.d5f2d94e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2036b0a.css",
+    "static/js/main.a788762f.js"
+  ]
+}

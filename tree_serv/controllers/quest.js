@@ -1,15 +1,20 @@
 // where Questions data comes
 const Quest = require('../models/Quest')
 
+const path =  __dirname +'/views/';
+
 // 'Quest', QuestSchema
 module.exports = {
-    getForm: async (req,res) => {
-        try{
-            res.render('index.ejs')
+    // getForm: async (req,res) => {
+    //     try{
+    //         res.render('index.ejs')
 
-        }catch(err){
-            console.log(err)
-        }
+    //     }catch(err){
+    //         console.log(err)
+    //     }
+    // },
+    getIndex: async (req,res)=> {
+        res.sendFile(path + "index.html")
     },
     getTree: async (req,res) => {
         try{
@@ -60,8 +65,8 @@ module.exports = {
                         NNNN: req.body.NNNN,
                     })
                 console.log('A new tree was added!')
-                res.json({message:'A new tree has been added!'})
-                res.redirect('/')
+                // res.json({message:'A new tree has been added!'})
+                res.redirect('/') //both triggers header errors notices
             }catch(err){
                 console.log(err)
             }
