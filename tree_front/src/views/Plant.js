@@ -24,8 +24,12 @@ export default function Plant(){
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({passcode, ...inputs}) 
+            body: JSON.stringify({
+                passcode: passcode,
+                ...inputs
+            }) 
         };
+        console.log(options)
         try {
             const response = await fetch(`${actualURL}/create-tree`, options)
             const results = await response.json()
