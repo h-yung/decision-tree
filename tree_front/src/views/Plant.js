@@ -63,16 +63,14 @@ export default function Plant(){
 
                 <input 
                         type="text"
-                        key="{inputs.question}" //suboptimal
-                        name={inputs.question}
+                        name="question"
                         value={inputs.question}
                         onChange={e=>handleInput(e)}
                         placeholder="Main question"
                 />
                 <input 
                         type="text"
-                        key={inputs.starter} //suboptimal
-                        name={inputs.starter}
+                        name="starter"
                         value={inputs.starter}
                         onChange={e=>handleInput(e)}
                         placeholder="Initial question"
