@@ -23,7 +23,7 @@ export default function About(){
             </section>
             <section className="min-h-screen bg-base-200 my-4">
                 <div className="flex-col lg:flex-row">
-                    <img src="/pexels-kelly-2563742.jpg" className="object-fill h-96 rounded-lg" />
+                    <img src="/pexels-kelly-2563742.jpg" alt="" className="object-fill h-96 rounded-lg" />
                     <div>
                         <h2>The suggestion box</h2>
                         <p className="subtitle">... will be open eventually.</p>

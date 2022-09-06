@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { inputMap, defaultInputs } from "../utils/inputMap"
 import { actualURL } from '../utils/resource';
@@ -10,10 +10,12 @@ export default function Plant(){
 
     const handleChange = (e)=> setPassCode(e.target.value)
     const handleInput = (e) => {
-        const inputUpdate = {...inputs, [e.target.name]:e.target.value};
-        setInputs(inputUpdate);
+        const newInput = e.target.value;
+        const keyLabel = e.target.name;
+        const inputUpdated = {...inputs, [keyLabel]:newInput};
+        console.log(`input updated is ${inputUpdated}`)
+        setInputs(inputUpdated);
     }
-
 
     const postNewTree = async (e) => {
         e.preventDefault();
@@ -31,6 +33,10 @@ export default function Plant(){
 
         }catch(err){ console.log(err)}
     }
+
+    useEffect(()=> {
+
+    })
 
     return (
         <>
@@ -57,7 +63,7 @@ export default function Plant(){
 
                 <input 
                         type="text"
-                        key={inputs.question} //suboptimal
+                        key="{inputs.question}" //suboptimal
                         name={inputs.question}
                         value={inputs.question}
                         onChange={e=>handleInput(e)}
