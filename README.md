@@ -9,6 +9,7 @@ Currently the new submission area is more of a worksheet format and not that eas
 **Tech used:** 
 - Front end: React, JavaScript, Tufte CSS, some DaisyUI and Tailwind
 - Back end: Node.js, Express, MongoDB, Mongoose. Generally follows MVC pattern.
+
 Likely rebuilding in Next.js as it will generally accumulate content that can be prerendered, and UX of "plant" page has other issues.
 
 ## Optimizations
