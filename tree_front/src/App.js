@@ -6,10 +6,7 @@ import Plant from './views/Plant';
 // import Suggest from './views/Suggest';
 import { sampleData } from './utils/sampleData';
 
-
 function App() {
-
-
   	return (
 		<Routes>
 			<Route path="/" element={<Layout />}>
