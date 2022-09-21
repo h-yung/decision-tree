@@ -8,8 +8,6 @@ import { sampleData } from './utils/sampleData';
 
 
 function App() {
-
-
   	return (
 		<Routes>
 			<Route path="/" element={<Layout />}>

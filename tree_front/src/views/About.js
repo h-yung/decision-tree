@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import './About.css';
 
 export default function About(){
     return (
-        <div className="App">
+        <div className="About carousel-item w-full" id="about">
             <h1>Project Background</h1>
             <section>
                 <h2>So what's all this for?</h2>
@@ -23,7 +24,7 @@ export default function About(){
             </section>
             <section className="min-h-screen bg-base-200 my-4">
                 <div className="flex-col lg:flex-row">
-                    <img src="/pexels-kelly-2563742.jpg" className="object-fill h-96 rounded-lg" />
+                    <img src="/pexels-kelly-2563742.jpg" className="object-fill h-96 rounded-lg" alt="" />
                     <div>
                         <h2>The suggestion box</h2>
                         <p className="subtitle">... will be open eventually.</p>

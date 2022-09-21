@@ -1,4 +1,11 @@
 /* form */
+.Plant {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border: 1px solid black;
+}
+
 .Plant__form {
 	display: flex;
 	flex-direction: column;

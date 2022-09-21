@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { QFront } from "../components/QFront";
 import { actualURL } from '../utils/resource';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFeatherPointed } from '@fortawesome/free-solid-svg-icons';
+
+import './Home.css';
 
 export default function Home({qList}){
     const [data, setData] = useState([]);
@@ -25,11 +29,18 @@ export default function Home({qList}){
     }
 
     return (
-        <div>
+        <div className="carousel-item w-full" id="home">
             {!active ? (
-                <>
-                    <header className="hero min-h-screen bg-base-200">
-                        <div className="hero-content text-center">
+                <div className="container">
+                    {/* <div className="container__top">
+                        <FontAwesomeIcon icon={faFeatherPointed}
+                         className="lead-in" />
+                         <FontAwesomeIcon icon={faFeatherPointed}
+                         className="lead-in mirror" />
+                         
+                    </div> */}
+                    <header className="hero min-h-screen bg-base-200 Home">
+                        <div className="hero-content text-center  sticky top-0">
                             <div className="max-w-md">
                                 <h1 className="text-5xl font-bold">Questions, answered.</h1>
                                 <p className="py-6">Find your question and get a suggested action to take within three to four steps.</p>
@@ -57,13 +68,20 @@ export default function Home({qList}){
                         </div>
                     </header>
                     
-                </>
+                </div>
             ) : (
                 <>
                     <QFront  
                         activeState={[active,setActive]} 
                         question={[activeQuestion, setActiveQuestion]}
                     />
+                    {/* <div className="container__top">
+                        <FontAwesomeIcon icon={faFeatherPointed}
+                         className="lead-in" />
+                         <FontAwesomeIcon icon={faFeatherPointed}
+                         className="lead-in mirror" />
+                         
+                    </div> */}
                 </>
             )
         }
