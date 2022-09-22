@@ -4,6 +4,13 @@
 	margin-top: 3rem;
 }
 
+.Nav-link_left {
+	text-align: right;
+}
+.Nav-link_right {
+	text-align: left;
+}
+
 .clickable:hover {
 	cursor: pointer;
 	font-weight: bold;

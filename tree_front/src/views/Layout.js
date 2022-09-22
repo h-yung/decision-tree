@@ -13,7 +13,7 @@ export default function Layout(){
 			</main>
 			<nav className="Nav sticky bottom-0">
 				<ul className="navlist btm-nav btm-nav-sm">
-					<li className="hover-bordered">
+					<li className="hover-bordered Nav-link_left">
 						<NavLink to="/" className="Nav-link">
 							Home
 						</NavLink>
@@ -23,7 +23,7 @@ export default function Layout(){
 							Plant
 						</NavLink>
 					</li>
-					<li className="hover-bordered">
+					<li className="hover-bordered Nav-link_right">
 						<NavLink to="/about" className="Nav-link">
 							About
 						</NavLink>

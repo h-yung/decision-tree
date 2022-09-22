@@ -33,6 +33,10 @@ body,
 	min-height: 100vh;
 }
 
+body {
+	padding: none;
+}
+
 .btn__primary {
 	margin: 1.5rem auto;
 	font-size: 1.6rem;
