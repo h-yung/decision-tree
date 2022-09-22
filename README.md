@@ -4,13 +4,16 @@ Everyone will likely have different approaches to breaking up a question, but th
 
 Currently the new submission area is more of a worksheet format and not that easy to parse, although the nostalgic/analog aesthetic isn't the worst. Tufte would not necessarily like the loose implementation of this CSS framework.
 
+While rebuilding in Next.js would be fine (it will generally accumulate content that can be prerendered, and UX of "plant" page has other issues), I am moving on from this project since there are other backlogged items to build in Next.js.
+
+## Live: https://the-orchard.netlify.app
+Frontend on Netlify; backend hosted on Render.
+
 ![decisiontree](https://user-images.githubusercontent.com/102257735/188240088-d21de1a8-59b1-4c03-a71e-4b16808955d0.jpg)
 
 **Tech used:** 
 - Front end: React, JavaScript, Tufte CSS, some DaisyUI and Tailwind
 - Back end: Node.js, Express, MongoDB, Mongoose. Generally follows MVC pattern.
-
-Likely rebuilding in Next.js as it will generally accumulate content that can be prerendered, and UX of "plant" page has other issues.
 
 ## Optimizations
 2. Build more user-friendly tree submission form.
