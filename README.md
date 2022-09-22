@@ -32,7 +32,7 @@ While rebuilding in Next.js would be fine (it will generally accumulate content 
 8. Deployed front and backend separately.
 
 ### Upcoming
-- ...
+ ...
 
 ## Lessons learned
 - Wanted a quick-and-dirty React/Mongo setup for experimentation ahead of another larger app. This worked out better than the first time around.
