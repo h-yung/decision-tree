@@ -29,9 +29,10 @@ Frontend on Netlify; backend hosted on Render.
 5. Tried different approaches to styling and ended up landing on Tufte CSS. Left Tailwind and daisyui detritus everywhere.
 6. Added a "plant a tree" option; requests accepted with passcode. 
 7. A separate copy was built in Next.js and deployed to Vercel, but still thinking through options.
+8. Deployed front and backend separately.
 
 ### Upcoming
-- [ ] Deploy! ...Maybe make a tree for deciding which hosting provider and whether going serverless.
+- ...
 
 ## Lessons learned
 - Wanted a quick-and-dirty React/Mongo setup for experimentation ahead of another larger app. This worked out better than the first time around.
