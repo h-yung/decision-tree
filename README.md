@@ -2,8 +2,8 @@
 A simple tool to support decision making and also a proof of concept.
 Everyone will likely have different approaches to breaking up a question, but the overall idea is thinking through a frequently asked question once, and then accepting the recommendation after following a certain sequence of your own choices.
 
-## Live: https://the-orchard.netlify.app
-Frontend on Netlify; backend hosted on Render.
+## Live: https://decision-tree.onrender.com/
+
 
 ![decisiontree](https://user-images.githubusercontent.com/102257735/188240088-d21de1a8-59b1-4c03-a71e-4b16808955d0.jpg)
 
