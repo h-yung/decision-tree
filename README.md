@@ -12,7 +12,7 @@ Everyone will likely have different approaches to breaking up a question, but th
 - Back end: Node.js, Express, MongoDB, Mongoose. Generally follows MVC pattern.
 
 ## Optimizations
-1. Debug - env variable for passcode ('plant a tree') is not acknowledging the passcode.
+1. Debug - env variable for passcode to plant a tree is not acknowledging the passcode (but accepting other env vars).
 2. Build more user-friendly tree submission form.
 3. Add user authentication.
 4. Set up multiple list and naming feature for Mongo.
