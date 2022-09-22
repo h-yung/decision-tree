@@ -1,10 +1,6 @@
 # decision-tree
 A simple tool to support decision making and also a proof of concept.
-Everyone will likely have different approaches to breaking up a question, but the overall idea is thinking through a frequently asked question once, and then accepting the recommendation after following a certain sequence of choices.
-
-Currently the new submission area is more of a worksheet format and not that easy to parse, although the nostalgic/analog aesthetic isn't the worst. Tufte would not necessarily like the loose implementation of this CSS framework.
-
-While rebuilding in Next.js would be fine (it will generally accumulate content that can be prerendered, and UX of "plant" page has other issues), I am moving on from this project since there are other backlogged items to build in Next.js.
+Everyone will likely have different approaches to breaking up a question, but the overall idea is thinking through a frequently asked question once, and then accepting the recommendation after following a certain sequence of your own choices.
 
 ## Live: https://the-orchard.netlify.app
 Frontend on Netlify; backend hosted on Render.
@@ -20,6 +16,10 @@ Frontend on Netlify; backend hosted on Render.
 3. Add user authentication.
 4. Set up multiple list and naming feature for Mongo.
 5. Build a "not sure" loop for longer-running questions.
+
+Currently the new submission area is more of a worksheet format and not that easy to parse, although the nostalgic/analog aesthetic isn't the worst. Tufte would not necessarily like the loose implementation of this CSS framework.
+
+While rebuilding in Next.js would be fine (it will generally accumulate content that can be prerendered, and UX of "plant" page has other issues), I am moving on from this project since there are other backlogged items to build in Next.js.
 
 ### Progress to date
 1. Config environment with Prettier and set up directory structure. 
