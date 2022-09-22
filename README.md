@@ -7,7 +7,8 @@ Currently the new submission area is more of a worksheet format and not that eas
 While rebuilding in Next.js would be fine (it will generally accumulate content that can be prerendered, and UX of "plant" page has other issues), I am moving on from this project since there are other backlogged items to build in Next.js.
 
 ## [Live](https://the-orchard.netlify.app/)
-Backend hosted on Render.
+Frontend on Netlify; backend hosted on Render.
+
 ![decisiontree](https://user-images.githubusercontent.com/102257735/188240088-d21de1a8-59b1-4c03-a71e-4b16808955d0.jpg)
 
 **Tech used:** 
